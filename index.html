@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Portofolio premium Susnanto, berfokus pada pengalaman, keterampilan, dan project yang dibuat dengan rasa syukur."
+      content="Portofolio premium Susnanto, berfokus pada desain, pengembangan, dan pengalaman digital modern."
     />
     <meta name="theme-color" content="#101510" />
     <title>Susnanto — Portfolio Premium</title>
@@ -24,7 +24,13 @@
           <span class="brand-mark">S.</span>
           <span>susnanto<span class="brand-dot">.</span></span>
         </a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Buka menu">
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Buka menu"
+        >
           <span></span><span></span>
         </button>
         <div class="nav-links" id="nav-links">
@@ -43,24 +49,37 @@
           <p class="eyebrow"><span class="eyebrow-line"></span> HALO, SAYA SUSNANTO</p>
           <h1>Menata ide menjadi <span>pengalaman yang berdampak.</span></h1>
           <p class="hero-intro">
-            Saya adalah seorang kreatif dan pengembang yang percaya bahwa desain yang
-            bagus harus terasa elegan, jelas, dan memberi manfaat nyata bagi orang lain.
+            Saya adalah seorang kreatif dan developer yang percaya desain yang bagus
+            tidak hanya terlihat indah, tetapi juga terasa jelas, nyaman, dan efektif
+            untuk mencapai tujuan.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#project">Lihat project <span aria-hidden="true">↘</span></a>
             <a class="text-link" href="#tentang">Kenali saya <span aria-hidden="true">→</span></a>
           </div>
+
+          <div class="social-row" aria-label="Tautan sosial">
+            <a href="https://github.com/kenzie-stack" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:alhafizhkenzie153@gmail.com">Email</a>
+            <a href="#kontak">Hire Me</a>
+          </div>
+
           <div class="hero-note"><span class="status-dot"></span> Available for freelance projects & collaborations.</div>
         </div>
+
         <div class="hero-visual">
           <div class="portrait-frame">
             <img src="img/cuskompres.jpg" alt="Potret Susnanto" />
-            <div class="portrait-caption"><span class="caption-kicker">MODERN • PREMIUM • RESPONSIVE</span><span>Visual yang tidak hanya indah, tapi juga efektif.</span></div>
+            <div class="portrait-caption">
+              <span class="caption-kicker">MODERN • PREMIUM • RESPONSIVE</span>
+              <span>Visual yang tidak hanya indah, tapi juga efektif.</span>
+            </div>
           </div>
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
           <span class="visual-star" aria-hidden="true">✳</span>
         </div>
+
         <a class="scroll-cue" href="#tentang"><span></span> GULIR UNTUK MENJELAJAH</a>
       </section>
 
@@ -71,18 +90,19 @@
           <div class="about-text">
             <p>
               Saya Susnanto, seorang individu yang terus belajar, beradaptasi, dan
-              membangun pengalaman melalui kerja, kreativitas, dan konsistensi.
-              Saya percaya bahwa kualitas kerja tidak cukup hanya terlihat dari hasil,
-              tapi juga dari proses, niat, dan rasa tanggung jawab di setiap langkahnya.
+              membangun pengalaman melalui kerja, kreativitas, dan konsistensi. Saya
+              percaya kualitas kerja tidak hanya terlihat dari hasil, tetapi juga dari
+              proses, niat, dan rasa tanggung jawab di setiap langkahnya.
             </p>
             <p>
               Saya tertarik pada visual yang bersih, pengalaman pengguna yang terasa
               natural, dan solusi digital yang membantu orang mencapai tujuan dengan lebih
-              mudah dan lebih percaya diri.
+              mudah, jelas, dan percaya diri.
             </p>
             <a class="text-link" href="#kontak">Mari berdiskusi <span aria-hidden="true">→</span></a>
           </div>
         </div>
+
         <div class="values-row" aria-label="Hal yang saya hargai">
           <div><span class="value-number">01</span><span>Kreativitas</span></div>
           <div><span class="value-number">02</span><span>Detail</span></div>
@@ -181,8 +201,13 @@
           <div class="section-label"><span>04</span> HUBUNGI SAYA</div>
           <h2>Siap bekerja sama <span>untuk ide berikutnya?</span></h2>
           <p>Saya terbuka untuk proyek kolaborasi, freelance, atau kebutuhan desain & pengembangan website yang lebih premium.</p>
+          <div class="contact-links" aria-label="Kontak cepat">
+            <a href="mailto:alhafizhkenzie153@gmail.com">alhafizhkenzie153@gmail.com</a>
+            <a href="https://github.com/kenzie-stack" target="_blank" rel="noreferrer">github.com/kenzie-stack</a>
+          </div>
           <div class="contact-decoration" aria-hidden="true">✳</div>
         </div>
+
         <div class="contact-form-wrap">
           <div class="form-alert" role="status" aria-live="polite" hidden></div>
           <form name="susnanto-web">
@@ -210,43 +235,46 @@
     </footer>
 
     <script>
-      const menuToggle = document.querySelector(".menu-toggle");
-      const navLinks = document.querySelector(".nav-links");
-      menuToggle.addEventListener("click", () => {
-        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
-        menuToggle.setAttribute("aria-expanded", String(!isOpen));
-        menuToggle.setAttribute("aria-label", isOpen ? "Buka menu" : "Tutup menu");
-        navLinks.classList.toggle("is-open", !isOpen);
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+
+      menuToggle.addEventListener('click', () => {
+        const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!isOpen));
+        menuToggle.setAttribute('aria-label', isOpen ? 'Buka menu' : 'Tutup menu');
+        navLinks.classList.toggle('is-open', !isOpen);
       });
-      navLinks.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-          menuToggle.setAttribute("aria-expanded", "false");
-          menuToggle.setAttribute("aria-label", "Buka menu");
-          navLinks.classList.remove("is-open");
+
+      navLinks.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          menuToggle.setAttribute('aria-expanded', 'false');
+          menuToggle.setAttribute('aria-label', 'Buka menu');
+          navLinks.classList.remove('is-open');
         });
       });
 
-      const scriptURL = "https://script.google.com/macros/s/AKfycbwZQ9wXz8Xq7GEDpXUQOpeF-QXR8x4wgfaXHLkrI7C0zc6VpoZwYhFWOG6TlacTDQ/exec";
-      const form = document.forms["susnanto-web"];
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwZQ9wXz8Xq7GEDpXUQOpeF-QXR8x4wgfaXHLkrI7C0zc6VpoZwYhFWOG6TlacTDQ/exec';
+      const form = document.forms['susnanto-web'];
       const submitButton = form.querySelector("button[type='submit']");
-      const submitLabel = form.querySelector(".submit-label");
-      const submitLoading = form.querySelector(".submit-loading");
-      const formAlert = document.querySelector(".form-alert");
+      const submitLabel = form.querySelector('.submit-label');
+      const submitLoading = form.querySelector('.submit-loading');
+      const formAlert = document.querySelector('.form-alert');
 
-      form.addEventListener("submit", async (event) => {
+      form.addEventListener('submit', async (event) => {
         event.preventDefault();
         submitButton.disabled = true;
         submitLabel.hidden = true;
         submitLoading.hidden = false;
         formAlert.hidden = true;
+
         try {
-          await fetch(scriptURL, { method: "POST", body: new FormData(form) });
-          formAlert.textContent = "Terima kasih! Pesan Anda sudah terkirim.";
-          formAlert.className = "form-alert is-success";
+          await fetch(scriptURL, { method: 'POST', body: new FormData(form) });
+          formAlert.textContent = 'Terima kasih! Pesan Anda sudah terkirim.';
+          formAlert.className = 'form-alert is-success';
           form.reset();
         } catch (error) {
-          formAlert.textContent = "Maaf, pesan belum berhasil dikirim. Silakan coba lagi.";
-          formAlert.className = "form-alert is-error";
+          formAlert.textContent = 'Maaf, pesan belum berhasil dikirim. Silakan coba lagi.';
+          formAlert.className = 'form-alert is-error';
         } finally {
           formAlert.hidden = false;
           submitButton.disabled = false;
